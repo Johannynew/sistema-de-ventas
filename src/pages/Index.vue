@@ -1,71 +1,43 @@
 <template>
-  <div class="q-pa-md q-gutter-sm">
-    <q-btn label="Alert" color="primary" @click="alert = true" />
-    <q-btn label="Confirm" color="primary" @click="confirm = true" />
-    <q-btn label="Prompt" color="primary" @click="prompt = true" />
-
-    <q-dialog v-model="alert">
-      <q-card>
-        <q-card-section>
-          <div class="text-h6">XD</div>
-        </q-card-section>
-
-        <q-card-section class="q-pt-none">
-        Hola Desde Quasar
-                                            </q-card-section>
-
-        <q-card-actions align="right">
-          <q-btn flat label="OK" color="primary" v-close-popup />
-        </q-card-actions>
-      </q-card>
-    </q-dialog>
-
-    <q-dialog v-model="confirm" persistent>
-      <q-card>
-        <q-card-section class="row items-center">
-          <q-avatar icon="signal_wifi_off" color="primary" text-color="white" />
-          <span class="q-ml-sm">You are currently not connected to any network.</span>
-        </q-card-section>
-
-        <q-card-actions align="right">
-          <q-btn flat label="Cancel" color="primary" v-close-popup />
-          <q-btn flat label="Turn on Wifi" color="primary" v-close-popup />
-        </q-card-actions>
-      </q-card>
-    </q-dialog>
-
-    <q-dialog v-model="prompt" persistent>
-      <q-card style="min-width: 350px">
-        <q-card-section>
-          <div class="text-h6">Your address</div>
-        </q-card-section>
-
-        <q-card-section class="q-pt-none">
-          <q-input dense v-model="address" autofocus @keyup.enter="prompt = false" />
-        </q-card-section>
-
-        <q-card-actions align="right" class="text-primary">
-          <q-btn flat label="Cancel" v-close-popup />
-          <q-btn flat label="Add address" v-close-popup />
-        </q-card-actions>
-      </q-card>
-    </q-dialog>
-  </div>
+  <q-page class="window-height window-width row justify-center items-center">
+    <div class="column">
+      <div>
+      </div>
+      <div class="row">
+        <q-card square bordered class="q-pa-lg shadow-1">
+          <q-card-section>
+            <h5 class="text-h5" style="text-align:center; color:blue;">Repuestos Las Chicas</h5>
+            <q-form class="q-gutter-md">
+              <q-input square filled clearable v-model="email" type="email" label="email" />
+              <q-input square filled clearable v-model="password" type="password" label="password" />
+            </q-form>
+          </q-card-section>
+          <q-card-actions class="q-px-md">
+            <q-btn unelevated color="primary" size="lg" class="full-width" label="Login" />
+          </q-card-actions>
+          <q-card-section class="text-center q-pa-none">
+            <p class="text-grey-6">No Registrado? <a href="#" style="text-decoration:none; color:blue">Crear Cuenta</a></p>
+          </q-card-section>
+        </q-card>
+      </div>
+    </div>
+  </q-page>
 </template>
 
 <script>
 export default {
-  name: 'PageIndex',
+  name: 'Login',
   data () {
     return {
-      alert: false,
-      confirm: false,
-      prompt: false,
-
-      address: ''
+      email: '',
+      password: ''
     }
   }
-
-
 }
 </script>
+
+<style>
+.q-card {
+  width: 360px;
+}
+</style>
