@@ -56,55 +56,32 @@ const linksData = [
   },
   {
     title: 'Almacen',
-<<<<<<< HEAD
-=======
-
->>>>>>> f333d045184f8730575fbed876b1fe7c88271dea
     icon: 'analytics',
     link: 'https://github.com/quasarframework'
   },
   {
     title: 'Compras',
-<<<<<<< HEAD
-=======
-
->>>>>>> f333d045184f8730575fbed876b1fe7c88271dea
     icon: 'shopping_cart',
     link: 'https://chat.quasar.dev'
   },
   {
     title: 'Ventas',
-<<<<<<< HEAD
-=======
 
->>>>>>> f333d045184f8730575fbed876b1fe7c88271dea
     icon: 'leaderboard',
     link: 'https://forum.quasar.dev'
   },
   {
     title: 'Productos',
-<<<<<<< HEAD
-=======
-
->>>>>>> f333d045184f8730575fbed876b1fe7c88271dea
     icon: 'build_circle',
     link: 'https://twitter.quasar.dev'
   },
   {
     title: 'Administrar accesos',
-<<<<<<< HEAD
-=======
-
->>>>>>> f333d045184f8730575fbed876b1fe7c88271dea
     icon: 'accessibility',
     link: 'https://facebook.quasar.dev'
   },
   {
     title: 'Configuracion',
-<<<<<<< HEAD
-=======
-
->>>>>>> f333d045184f8730575fbed876b1fe7c88271dea
     icon: 'settings',
     link: 'https://awesome.quasar.dev'
 
