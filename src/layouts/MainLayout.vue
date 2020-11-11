@@ -15,6 +15,7 @@
           Repuesto Las Chicas
         </q-toolbar-title>
 
+        <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
     </q-header>
 
@@ -51,42 +52,43 @@ import EssentialLink from 'components/EssentialLink.vue'
 const linksData = [
   {
     title: 'Dashboard',
+    caption: 'quasar.dev',
     icon: 'assessment',
-    
+    link: 'https://quasar.dev'
   },
   {
     title: 'Almacen',
-    
+    caption: 'github.com/quasarframework',
     icon: 'analytics',
     link: 'https://github.com/quasarframework'
   },
   {
     title: 'Compras',
-    
+    caption: 'chat.quasar.dev',
     icon: 'shopping_cart',
     link: 'https://chat.quasar.dev'
   },
   {
     title: 'Ventas',
-   
+    caption: 'forum.quasar.dev',
     icon: 'leaderboard',
     link: 'https://forum.quasar.dev'
   },
   {
     title: 'Productos',
-   
+    caption: '@quasarframework',
     icon: 'build_circle',
     link: 'https://twitter.quasar.dev'
   },
   {
     title: 'Administrar accesos',
-    
+    caption: '@QuasarFramework',
     icon: 'accessibility',
     link: 'https://facebook.quasar.dev'
   },
   {
     title: 'Configuracion',
-   
+    caption: 'Community Quasar projects',
     icon: 'settings',
     link: 'https://awesome.quasar.dev'
   }
